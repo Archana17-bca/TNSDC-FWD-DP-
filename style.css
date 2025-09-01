@@ -1,0 +1,151 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #fddde6, #f8d7da, #d1f7f1);
+  color: #333;
+  line-height: 1.8;
+}
+
+/* Navigation */
+header {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1.2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+  color: #e07a5f;
+  transform: scale(1.1);
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #e07a5f;
+  letter-spacing: 1px;
+}
+
+p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background: #fff;
+  border-radius: 25px;
+  padding: 0.7rem 1.4rem;
+  margin: 0.6rem;
+  font-weight: 500;
+  color: #444;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.skills-list li:hover {
+  transform: translateY(-5px);
+  background: #ffe8e8;
+}
+
+/* Projects */
+.project {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  max-width: 650px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+}
+
+/* Contact Form */
+form {
+  max-width: 550px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea, form button {
+  margin: 0.6rem 0;
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+form button {
+  background: #e07a5f;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background: #c45d46;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+  letter-spacing: 0.5px;
+  border-top: 1px solid #eee;
+}
